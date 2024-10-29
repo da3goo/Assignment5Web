@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        .taskNUm{
+            text-align: center;
+            font-weight: bold;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+
+        }
+        button{
+            padding: 6px 10px;
+            background-color: black ;
+            color: white;
+        }
+        .parts{
+            font-size: 36px;
+            color: red;
+            font-weight: bold;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .highlight{
+            background-color: blue;
+            color: white;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+        .links{
+            border-color: solid black;
+            border: 2px;
+            display: inline-block;
+            padding: 12px 12px;
+            background-color: black;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 50px;
+            text-align: center;
+            margin-right: 30px;
+        }
+        .links:hover{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border-color: solid black;
+            border: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Part 1 -->
+    <!-- -------------------------------------------------------------->
+    <h1 class="parts">Part 1</h1>
+    <br><br>
+
+    
+    <h1 class="taskNum">Task 1</h1>
+    
+    <button onclick="findNearestAndBlabla()">Find!</button>
+    <p id="nearestRes"></p>
+    <p id="farthestRes"></p>  
+    <br><br>
+
+    <!-- Task 2 -->
+    <h1 class="taskNum">Task 2</h1>
+    <input type="text" placeholder="Write text..." id="string1">
+    <button onclick="sortWords()">Result!</button>
+    <p id="sortingRes"></p>
+    <br><br>
+    <!-- Task 3 -->
+    <h1 class="taskNum">Task 3</h1>
+    <input type="text" id="task3Text1" placeholder="Enter text">
+    <button onclick="task3()">Result!</button>
+    <p id="task3Res"></p>
+    <br><br>
+
+    <!-- Task 4 -->
+    <h1 class="taskNum">Task 4</h1>
+    <input type="text" id="task4Input" placeholder="Enter text">
+    <button onclick="task4()">Result!</button>
+    <br><br>
+
+    <!-- Task 5 -->
+    <h1 class="taskNum">Task 5</h1>
+    <button onclick="task5()">Result!</button>
+    <p id="task5Res"></p>
+    <br><br>
+    <!-- -------------------------------------------------------------->
+    <!-- Part 2 -->
+    <h1 class="parts">Part 2</h1>
+    <br><br>
+
+    <!-- Task 6 -->
+    <h1 class="taskNum">Task 6</h1>
+    <input type="text" id="task6Input" placeholder="Enter text..." style="width: 300px; height: 40px;font-size: 14px;">
+    <button onclick="task6()">Result!</button>
+    <p id="task6Res"></p>
+    <br><br>
+
+    <!-- Task 7 -->
+    <h1 class="taskNum">Task 7</h1>
+    <input type="text" id="task7Input" placeholder="Enter text..." style="width:300px; height: 40px; font-size:14px;">
+    <button onclick="task7()">Result!</button>
+    <p id="task7Res"></p>
+    <br><br>
+
+    <!-- Task 8 -->
+    <h1 class="taskNum">Task 8</h1>
+    <input type="text" placeholder="Enter text..." id="task8Input">
+    <button onclick="task8()">Result!</button>
+    <p id="task8Result"></p>
+    <br><br>
+
+    <!-- Task 9 -->
+    <h1 class="taskNum">Task 9</h1>
+    <input type="text" placeholder="Enter text..." id="task9Input">
+    <button onclick="task9()">Result!</button>
+    <br><br>
+
+    <!-- Task 10 -->
+    <h1 class="taskNum">Task 10</h1>
+    <input type="text" placeholder="Enter text..." id="task10Input">
+    <button onclick="task10()">Result!</button>
+    <p id="task10Result"></p>
+
+    <!-- -------------------------------------------------------------->
+    <!-- Part 4 -->
+    <h1 class="parts">Part 4</h1>
+    <br><br>
+
+    <!-- Task 16- 20 -->
+    <a href="./task16.html" class="links">16</a>
+    <a href="./task17.html" class="links">17</a>    
+    <a href="./task18.html" class="links">18</a>
+    <a href="./task19.html" class="links">19</a>
+    <a href="./task20.html" class="links">20</a>
+    <br><br><br>
+
+    <h1>That's all</h1>
+
+
+   
+
+     
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
