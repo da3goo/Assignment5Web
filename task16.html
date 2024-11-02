@@ -5,99 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <style>
+    p{
+        font-size: 30px;
+    }
     body{
-        background: wheat;
+        background-color: wheat;
     }
     #main{
+        padding: 12px;
         transition: margin-left 0.5s;
-        padding: 20px;
     }
-
-    #main span{
+    #opennavButton{
         font-size: 30px;
         cursor: pointer;
     }
-    .sidenav{
+    #navbar{
         height: 100%;
-        width: 0px;
-        position: fixed;
-        top: 0;
+        position: fixed ;
         left: 0;
-        background-color: rgb(220, 198, 198);
+        top: 0;
+        z-index: 1;
         overflow: hidden;
-        transition: 0.5s
-    }
-    .sidenav .closebtn{
-        font-size: 36px;
-        border-bottom: none;
-        text-decoration: none;
-        color: white;
-        float: right;
-        margin-right: 25px;
-        margin-bottom: 50px;
+        background-color: aquamarine;
+        width: 0px;
+        transition: 0.5s;
 
     }
-    .sidenav ul{
-        clear: both;
-    }
-    .sidenav ul li a{
-        padding: 12px 8px 12px 30px;
-        text-decoration: none;
-        font-size: 18px;
-        color: white;
-        display: block;
-        transition: 0.3s;
-        border: bottom 1px solid #b3ddb4;
-        text-transform: uppercase;
-    }
-    .sidenav ul li a:hover{
-        background: #6ba566;
-    }
-    li {
+    #navbar ul{
         list-style-type: none;
+        
     }
+    #navbar ul li a{
+        height: 36px;
+        padding: 12px 8px 8px 12px;
+        display: block;
+        border-bottom: 1px solid rgb(42, 104, 28);
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+    #navbar ul li a:hover{
+        background-color: rgb(53, 237, 175);
+    }
+
 </style>
-
 <body>
-
     <div id="main">
-        <h2>Sidebar</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex deleniti placeat tempore, consequatur enim architecto et veniam laborum dolor numquam nesciunt, dolore ratione! Ad dolorum eum harum. Tenetur, vel.
-        </p>
-        <span id="opennav">&#9776;Menu</span>
+        <span id="opennavButton">&#9776;Menu</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab velit distinctio pariatur architecto expedita saepe praesentium inventore facere iste vel. Libero officia veritatis ipsam odit, aut consectetur dicta facilis fugit?</p>
+
     </div>
 
-    <div class="sidenav" id="sidenav">
-        <a href="#" class="closebtn" id="closebtn">X</a>
+    <div id="navbar">
+
         <ul>
-            <li><a href="#">Main</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">My Hobbies</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">My hobbies</a></li>
+            <li><a href="">Contact me</a></li>
         </ul>
     </div>
     
-    
-    
-    
-
-
-
 
     <script>
-        document.getElementById('opennav').addEventListener("click", function() {
-            document.getElementById('sidenav').style.width = "250px";
-            document.getElementById('main').style.marginLeft = "250px"
-
-            
+        let isOPened = false;
+        document.getElementById('opennavButton').addEventListener('click',function(){
+            if(!isOPened){
+                document.getElementById('navbar').style.width = '250px';
+                document.getElementById('main').style.marginLeft = "250px";
+                isOPened = true;
+            }else if(isOPened){
+                document.getElementById('navbar').style.width = '0px';
+                document.getElementById('main').style.marginLeft = "0px";
+                isOPened = false;
+            }
         });
-        document.getElementById('closebtn').addEventListener('click',function() {
-            document.getElementById('sidenav').style.width = "0px";
-            document.getElementById('main').style.marginLeft = "0px"
-
-        })
     </script>
 </body>
 </html>

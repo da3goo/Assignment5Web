@@ -11,8 +11,7 @@ function findNearestAndBlabla(){
 
     let distances = [Math.abs(100-num1),Math.abs(100-num2),Math.abs(100-num3)]; // [80,90,60]
 
-    let max = distances[0];
-    let min = distances[0];
+    
     
     distances.sort(); //[60,80,90]
 
